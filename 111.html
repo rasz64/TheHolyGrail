@@ -16,26 +16,40 @@
                 color: white;
             }
 
-            button {
+            #button1 {
                 border-radius: 0%;
                 width: 100px;
                 height: 70px;
-                
+                background-color: brown;
+                font-size: 50px;
+            }
+
+            #button2 {
+                border-radius: 0%;
+                width: 140px;
+                height: 70px;
+                background-color: brown;
                 font-size: 50px;
             }
         </style>
     </head>
 <body>
     <center>
-    <h1>YOU ÄRÈ ƧTÚÇK ₣ØⱤɆVɆⱤ. ɎØɄ ₵₳₦ ɖıɛ ᎧᏒ ຟคit. C̷͈͛H̴̯̅̽Ö̵͍́I̵̾̅͜C̵̠͠Ě̶̩  ᎥᏕ ๏ยгร</h1>
-        <b></b>
-    <button type="button" onclick="die()">DIE</button>
+    <h1 id="title">YOU ÄRÈ ƧTÚÇK ₣ØⱤɆVɆⱤ. ɎØɄ ₵₳₦ ɖıɛ ᎧᏒ ຟคit. C̷͈͛H̴̯̅̽Ö̵͍́I̵̾̅͜C̵̠͠Ě̶̩  ᎥᏕ ๏ยгร</h1>
+    <button type="button" onclick="die()" id="button1">DIE</button>
+    <button type="button" onclick="wait()" id="button2">WAIT</button>
     </center>
 
     <script>
         function die() {
             alert("ყ ơ ų     ą  ཞ ɛ      ɖ ɛ ą ɖ");
             window.close();
+        }
+
+        function wait() {
+            document.getElementById("button1").style.visibility = "hidden"; 
+            document.getElementById("button2").style.visibility = "hidden";
+            document.getElementById("title").style.visibility = "hidden";
         }
     </script>
 </body>
