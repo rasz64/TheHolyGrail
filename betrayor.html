@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ʸᴼᵁ ᶠᴵᴸᵀᴴʸ ᴮᴱᵀᴿᴬʸᴼᴿ
+        </title>
+
+        <style>
+            body {
+                background-color: black;
+            }
+
+            h1 {
+                color: white;
+                text-align: center;
+            }
+
+            button {
+                border-radius: 0%;
+                background-color: gray;
+            }
+        </style>
+    </head>
+<body>
+    <h1>ⲨⲞⴑ ⲀꞄⲈ Ⲁ ⲂⲈⲦꞄⲀⲨⲞꞄ. 𝓙ⴑϨⲦ 𝓛ⲈⲀ𝓥Ⲉ ⲦⲎⲈ ⲎⲞ𝓛Ⲩ 𝓖ꞄⲀⲒ𝓛 Ⲁ𝓛ⲞⲚⲈ</h1><br>
+    <h1>ⲨⲞⴑ ⲀꞄⲈ ⲚⲈ𝓥ⲈꞄ 𝓕ⲞꞄ𝓖Ⲓ𝓥ⲈⲚ.</h1><br>
+    <center>
+        <button type="button" onclick="yes()" id="b1">Understood. I will leave this website.</button>
+        <br>
+        <br>
+        <button type="button" onclick="no()" id="b1">No. I will still go around the website.</button>
+    </center>
+
+    <script>
+        function yes() {
+            sleep(5000);
+            window.close();
+        }
+
+        function no() {
+            window.location.href = "111.html";
+        }
+
+        function sleep(milliseconds) {
+        var start = new Date().getTime();
+        for (var i = 0; i < 1e7; i++) {
+            if ((new Date().getTime() - start) > milliseconds){
+            break;
+            }
+        }
+        }
+    </script>
+</body>
+</html>
