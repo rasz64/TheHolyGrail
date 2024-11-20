@@ -33,7 +33,6 @@
             }
 
             #escape {
-                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu7uBxxYT34HzxVou4E5DDiwLhp8eoaehq3Q&s");
                 background-color: black;
                 width: 50px;
                 height: 60px;
@@ -50,9 +49,11 @@
     <h1 id="title">ʏօʊ ǟʀɛ ǟ ʄɨʟȶɦʏ ǟռɨʍǟʟ. ʟɛǟʋɛ ȶɦɛ ɦօʟʏ ɢʀǟɨʟ ǟʟօռɛ. ʏօʊ աɨʟʟ ռɛʋɛʀ ʄɨռɖ ɨȶ</h1>
     </center>
 
-    <div id="escape"></div>
+    <div id="escape" onclick="escape()"></div>
     <script>
-        
+        function escape() {
+            document.getElementById("escape").onclick = "https:/rasz64.github.io/theholygrail";
+        }
     </script>
 </body>
 </html>
